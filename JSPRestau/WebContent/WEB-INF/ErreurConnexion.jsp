@@ -11,7 +11,7 @@
 <body>
 	<%@ include file="../header.jsp" %>
   
-	<h1>Login ou mot de passe incorrect</h1>
+	<h1 class='text-center'>Login ou mot de passe incorrect</h1>
 	
 	<%@ include file="../footer.jsp" %>
 </body>
