@@ -11,8 +11,8 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-	<h3>La commande de <c:out value="${client.nom} ${client.prenom}" /></h3>
-	<table border="1" class="table table-striped">
+	<h3 class="text-center">La commande de <c:out value="${client.nom} ${client.prenom}" /></h3>
+	<table border="1" class="table table-striped w-75" style="margin: 20px auto;">
 		<thead class="thead-dark">
 			<tr>
 			    <th>Articles</th>

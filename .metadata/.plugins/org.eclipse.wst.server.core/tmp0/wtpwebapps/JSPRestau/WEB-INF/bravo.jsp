@@ -11,7 +11,7 @@
 </head>
 <body>
 	<%@ include file="../header.jsp" %>
-	<div>
+	<div class="text-center">
 		<h1>Votre commande a bien été validée ! </h1>
 		<p>Numéro de commande :
 		<%= session.getAttribute("p")%>

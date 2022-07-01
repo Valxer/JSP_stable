@@ -22,8 +22,8 @@
 		<div id="menu sélection" class="col">
 			<p>Fais ton choix parmi nos plats de qualité:</p>
 			<form action="Ajout" method="post">
-				<select class="form-select" name="select" required>
-				  <option value="">Selectionne un article</option>
+				<select class="form-select" name="select" >
+				  <option selected>Selectionne un article</option>
 				  <c:forEach var="article" items="${articles}">
 				  		<option value=<c:out value="${article.ref }" />><c:out value="${article.nom}" /></option>
 				  </c:forEach>
@@ -31,7 +31,7 @@
 				<div class="col-4">
 					Quantité :<input name="quantite" type="number" value="1">				
 				</div>
-				<button type="submit" class="btn btn-primary mt-4" value="ajouter">Ajouter</button>			
+				<button type="submit" class="btn btn-primary" value="ajouter">Ajouter</button>			
 			</form>
 		</div>
 		<div id="panier" class="col">

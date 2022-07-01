@@ -3,10 +3,9 @@
 <%@ page import="model.Client" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <header>
-    <h1><a href="Accueil.jsp">Restaurant</a></h1>
-
-    <div id="navigation">
-      <ul class="nav justify-content-center">
+<a href="Accueil.jsp" class="d-flex justify-content-center"><img src="https://zupimages.net/up/22/26/nfnq.jpg" height="200"></a>
+<nav class="navbar-dark bg-primary ">
+      <ul class="nav justify-content-around">
         <li class="nav-item"> <a class="nav-link" href="Accueil.jsp">Accueil</a></li>
         <li class="nav-item"> <a class="nav-link" href="Menu">Menu</a> </li>
         <% 
@@ -20,5 +19,5 @@
        
        	%>
       </ul>
-    </div>
+</nav>
 </header>
