@@ -6,6 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Selection des articles</title>
+<link rel="stylesheet" href="css/common_styles.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -21,7 +22,7 @@
 		<div id="menu sélection" class="col">
 			<p>Fais ton choix parmi nos plats de qualité:</p>
 			<form action="Ajout" method="post">
-				<select class="form-select" name="select">
+				<select class="form-select" name="select" >
 				  <option selected>Selectionne un article</option>
 				  <c:forEach var="article" items="${articles}">
 				  		<option value=<c:out value="${article.ref }" />><c:out value="${article.nom}" /></option>
