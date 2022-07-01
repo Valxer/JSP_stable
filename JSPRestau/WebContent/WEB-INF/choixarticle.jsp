@@ -1,11 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Selection des articles</title>
+<link rel="stylesheet" href="css/common_styles.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -21,7 +22,7 @@
 		<div id="menu sélection" class="col">
 			<p>Fais ton choix parmi nos plats de qualité:</p>
 			<form action="Ajout" method="post">
-				<select class="form-select" name="select">
+				<select class="form-select" name="select" >
 				  <option selected>Selectionne un article</option>
 				  <c:forEach var="article" items="${articles}">
 				  		<option value=<c:out value="${article.ref }" />><c:out value="${article.nom}" /></option>
