@@ -56,7 +56,15 @@
 		</div>
 	</div>
 	<div class="d-flex justify-content-end">
-		<a class="btn btn-success" href="Recap" role="button">Valider le panier</a>
+		<% 
+       	if (session.getAttribute("panier") != null){
+       		out.print("<a class='btn btn-success' href='Recap' role='button'>Valider le panier</a>");
+       	} else {
+       		out.print("<a class='btn btn-secondary' href='Recap' role='button'>Panier vide</a>");
+       	}
+       
+       	%>
+		
 	</div>
 </div>
 

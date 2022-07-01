@@ -24,7 +24,7 @@
 			<label for="mdp">Mot de passe</label>
 			<input name = "mdp" type = "password" required/><br><br>
 		
-			<input type = "submit" value ="Se connecter" class="btn btn-primary" style="margin:0 auto;"/>
+			<input type = "submit" value ="Se connecter" class="btn btn-primary" style="margin:10px auto;"/>
 		</form>  
 	</div>
 	<hr>

@@ -24,11 +24,11 @@
 			<label for="mdp">Mot de passe</label>
 			<input name = "mdp" type = "password" required/><br><br>
 		
-			<input type = "submit" value ="Se connecter" class="btn btn-primary" style="margin:0 auto;"/>
+			<input type = "submit" value ="Se connecter" class="btn btn-primary"/>
 		</form>  
 	</div>
 	<hr>
-	<div class="w-75 d-flex flex-column align-items-center">
+	<div class="w-75">
 		<h3>Première visite ? Inscrivez-vous:</h3>
 		<form action = "ServletInscription">
 			<label for="nom">Nom</label>

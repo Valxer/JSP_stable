@@ -17,14 +17,14 @@
   <section class="d-flex flex-column align-items-center">
 	<div class="w-75 d-flex flex-column align-items-center">
 	 	<h3>Déjà client ? Connectez-vous:</h3>
-		<form action = "ServletConnexion">
+		<form action = "ServletConnexion" class="d-flex flex-column align-items-center">
 			<label for="identifiant">Identifiant</label>
 			<input name = "identifiant" type = "number" placeholder="00000000" required/><br><br>
 		
 			<label for="mdp">Mot de passe</label>
 			<input name = "mdp" type = "password" required/><br><br>
 		
-			<input type = "submit" value ="Se connecter" class="btn btn-primary" style="margin:0 auto;"/>
+			<input type = "submit" value ="Se connecter" class="btn btn-primary"/>
 		</form>  
 	</div>
 	<hr>
