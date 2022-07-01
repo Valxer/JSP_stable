@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+C:\Users\Valxer\wrkspace\JSP_stable\.metadata\.plugins\org.eclipse.jdt.core
+3999993971.index
+2500713425.index
+1437342521.index

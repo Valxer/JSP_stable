@@ -1,0 +1,10 @@
+127.0.0.1 - - [01/Jul/2022:13:57:40 +0200] "GET / HTTP/1.1" 404 996
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:57:48 +0200] "GET /JSPRestau/Accueil.jsp HTTP/1.1" 200 3147
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:57:58 +0200] "GET /JSPRestau/Accueil.jsp HTTP/1.1" 200 3147
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:03 +0200] "GET /JSPRestau/Accueil.jsp HTTP/1.1" 200 3147
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:05 +0200] "GET /JSPRestau/Connexion.jsp HTTP/1.1" 200 4243
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:09 +0200] "GET /JSPRestau/ServletConnexion?identifiant=27&mdp=aaa HTTP/1.1" 500 3210
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:10 +0200] "GET /JSPRestau/ServletAccesCommande HTTP/1.1" 200 4850
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:13 +0200] "POST /JSPRestau/Ajout HTTP/1.1" 200 5018
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:14 +0200] "GET /JSPRestau/Recap HTTP/1.1" 500 1731
+0:0:0:0:0:0:0:1 - - [01/Jul/2022:13:58:14 +0200] "GET /JSPRestau/OrderCompleted HTTP/1.1" 200 3356
