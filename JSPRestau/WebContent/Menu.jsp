@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,7 +12,25 @@
 <body>
 	<%@ include file="header.jsp" %>
   
-	<h2>Menu</h2>
+	<h2 class="text-center">Menu</h2>
+	<section class="menu-container d-flex flex-wrap justify-content-around">
+		<c:forEach var="article" items="${articles}">
+			<div style="width: 350px; margin: 30px 15px;" class="articlecard text-center" onclick="myFunction(this)">
+				<img style="object-fit:cover;" src=<c:out value="${article.image}"/> alt="Girl in a jacket" width="250" height="250">
+				<h3><c:out value="${article.nom}"/></h3>
+				<p class="desc" style="display:none;"><c:out value="${article.description}"/></p>
+				<h3><c:out value="${article.prix} €"/></h3>				
+			</div>
+		</c:forEach>
+	</section>
+	<script>
+		function myFunction(target) {
+			if (target.querySelector(".desc").style.display == "none")
+		 		target.querySelector(".desc").style.display = "block"
+		 	else
+		 		target.querySelector(".desc").style.display = "none"
+		}
+	</script>
   
 	<%@ include file="footer.jsp" %>
 </body>

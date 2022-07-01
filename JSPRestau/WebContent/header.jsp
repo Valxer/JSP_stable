@@ -7,7 +7,7 @@
 <nav class="navbar-dark bg-primary ">
       <ul class="nav justify-content-around">
         <li class="nav-item"> <a class="nav-link" href="Accueil.jsp">Accueil</a></li>
-        <li class="nav-item"> <a class="nav-link" href="Menu.jsp">Menu</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="Menu">Menu</a> </li>
         <% 
        	Client c = (Client)session.getAttribute("client");
        	if (c == null){
