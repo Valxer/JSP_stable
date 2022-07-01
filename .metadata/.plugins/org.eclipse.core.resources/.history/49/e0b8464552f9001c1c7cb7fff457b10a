@@ -44,8 +44,6 @@ public class ServletConnexion extends HttpServlet {
 					request.getSession().setAttribute("client", c);
 					request.getRequestDispatcher("WEB-INF/ConfirmationConnexion.jsp").forward(request, response);
 				}
-				else
-					request.getRequestDispatcher("WEB-INF/ErreurConnexion.jsp").forward(request, response);
 			}
 			else
 				request.getRequestDispatcher("WEB-INF/ErreurConnexion.jsp").forward(request, response);

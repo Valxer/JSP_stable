@@ -12,7 +12,7 @@
 <body>
 	<%@ include file="../header.jsp" %>
 	<div class="text-center">
-		<h1>Votre commande a bien été validée ! </h1>
+		<h1>Votre commande a bien été validée ! Montant : <%=request.getAttribute("totalfinal") %> € </h1>
 		<p>Numéro de commande :
 		<%= session.getAttribute("p")%>
 		</p>

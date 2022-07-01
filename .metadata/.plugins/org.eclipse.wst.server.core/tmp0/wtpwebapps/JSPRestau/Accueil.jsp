@@ -14,6 +14,16 @@
   
   <h2>Accueil</h2>
   
+  <div class="pic-ctn w-75" style=" margin: 0 auto;">
+    <img src="https://zupimages.net/up/22/26/ihg6.jpg" alt="" class="pic" width=100% height=100% >
+    <img src="https://zupimages.net/up/22/26/ue75.jpg" alt="" class="pic" width=100% height=100%>
+    <img src="https://zupimages.net/up/22/26/qxbc.jpg" alt="" class="pic" width=100% height=100%>
+    <img src="https://zupimages.net/up/22/26/kuh3.jpg" alt="" class="pic" width=100% height=100%>
+    <img src="https://zupimages.net/viewer.php?id=22/26/pyyi.jpg" alt="" class="pic" width=100% height=100%>
+  </div>
+  
+  
+  
   <%@ include file="footer.jsp" %>
 	
 </body>

@@ -42,7 +42,6 @@ public class OrderCompleted extends HttpServlet {
 				int idart = a.getIdarticle();
 				int quantite = a.getQuantite();
 				new CommandeArticleDaoImpl().create(new CommandeArticle(id, idart, quantite));
-				request.setAttribute("totalfinal", request.getSession().getAttribute("totalp"));
 				request.getSession().setAttribute("totalp", null);
 				request.getSession().setAttribute("panier", null);
 			}

@@ -59,7 +59,6 @@
 		<% 
        	if (session.getAttribute("panier") != null){
        		out.print("<a class='btn btn-success' href='Recap' role='button'>Valider le panier</a>");
-       		out.print("<a class='btn btn-danger' href='Reset' role='button'>Vider le panier</a>");
        	} else {
        		out.print("<a class='btn btn-secondary' href='Recap' role='button'>Panier vide</a>");
        	}
