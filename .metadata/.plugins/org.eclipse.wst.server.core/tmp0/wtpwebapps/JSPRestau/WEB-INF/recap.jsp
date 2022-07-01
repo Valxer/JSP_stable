@@ -36,5 +36,7 @@
 	<div class="d-flex justify-content-center">
 		<a class="btn btn-success" href="OrderCompleted" role="button">Finaliser la commande</a>
 	</div>
+	
+	<%@ include file="../footer.jsp" %>
 </body>
 </html>
