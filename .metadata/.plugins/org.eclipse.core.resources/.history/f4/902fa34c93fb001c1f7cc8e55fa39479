@@ -42,8 +42,8 @@ public class OrderCompleted extends HttpServlet {
 				int idart = a.getIdarticle();
 				int quantite = a.getQuantite();
 				new CommandeArticleDaoImpl().create(new CommandeArticle(id, idart, quantite));
+				request.setAttribute("totalfinal", request.getSession().getAttribute("totalp"));
 			}
-			request.setAttribute("totalfinal", request.getSession().getAttribute("totalp"));
 			request.getSession().setAttribute("panier", null);
 			request.getSession().setAttribute("totalp", null);
 			request.getRequestDispatcher("WEB-INF/bravo.jsp").forward(request, response);

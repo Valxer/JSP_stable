@@ -31,8 +31,7 @@ public class ServletRecap extends HttpServlet {
 			throws ServletException, IOException {
 		if (request.getSession().getAttribute("panier") != null)
 			request.getRequestDispatcher("WEB-INF/recap.jsp").forward(request, response);
-		else
-			request.getRequestDispatcher("WEB-INF/choixarticle.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/choixarticle.jsp").forward(request, response);
 	}
 
 	/**

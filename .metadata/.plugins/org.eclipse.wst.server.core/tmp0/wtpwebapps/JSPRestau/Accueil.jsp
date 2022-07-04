@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+,<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@ page import="model.Client" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -19,7 +19,7 @@
     <img src="https://zupimages.net/up/22/26/ue75.jpg" alt="" class="pic" width=100% height=100%>
     <img src="https://zupimages.net/up/22/26/qxbc.jpg" alt="" class="pic" width=100% height=100%>
     <img src="https://zupimages.net/up/22/26/kuh3.jpg" alt="" class="pic" width=100% height=100%>
-    <img src="https://zupimages.net/viewer.php?id=22/26/pyyi.jpg" alt="" class="pic" width=100% height=100%>
+    <img src="https://zupimages.net/up/22/26/pyyi.jpg" alt="" class="pic" width=100% height=100%>
   </div>
   
   
