@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import dao.ArticleDaoImpl;
 import model.Article;
 
-@WebServlet("/Edit")
+@WebServlet("/Editarticle")
 public class ServletEdit extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

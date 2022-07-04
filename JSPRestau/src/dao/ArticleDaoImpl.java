@@ -13,11 +13,11 @@ import model.Article;
 
 public class ArticleDaoImpl implements DaoArticle {
 
-	public void delete(Article p) throws ClassNotFoundException, SQLException {
+	public void delete(Integer p) throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbrestau", "root", "root");
 
-		String sql = "delete from Articles where id= " + p.getRef();
+		String sql = "delete from articles where ref= " + p;
 
 		Statement st = conn.createStatement();
 		st.executeUpdate(sql);
@@ -30,8 +30,9 @@ public class ArticleDaoImpl implements DaoArticle {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbrestau", "root", "root");
 
-		String sql = "update Articles set nom='" + p.getNom() + "',description='" + p.getDescription() + "',prix="
-				+ p.getPrix() + "',image=" + p.getImage() + " where id=" + p.getRef();
+		String sql = "update articles set nom='" + p.getNom() + "',description='" + p.getDescription() + "',prix="
+				+ p.getPrix() + ",image='" + p.getImage() + "' where ref=" + p.getRef();
+		System.out.println(sql);
 		Statement st = conn.createStatement();
 		st.executeUpdate(sql);
 

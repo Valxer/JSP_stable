@@ -119,7 +119,9 @@ public class CommandeDaoImpl implements DaoCommande {
 	}
 
 	@Override
-	public void delete(Commande obj) throws ClassNotFoundException, SQLException {
+	public void delete(Integer id) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -12,6 +12,6 @@ public interface Dao<T, PK> {
 
 	public void update(T obj) throws ClassNotFoundException, SQLException;
 
-	public void delete(T obj) throws ClassNotFoundException, SQLException;
+	public void delete(PK id) throws ClassNotFoundException, SQLException;
 
 }

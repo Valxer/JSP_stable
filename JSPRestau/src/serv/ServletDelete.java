@@ -15,7 +15,7 @@ import model.Article;
 /**
  * Servlet implementation class ServletDelete
  */
-@WebServlet("/ServletDelete")
+@WebServlet("/Delete")
 public class ServletDelete extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -24,14 +24,8 @@ public class ServletDelete extends HttpServlet {
     }
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Article a = new Article();
-		a.setRef(Integer.parseInt(request.getParameter("ref")));
-		a.setNom(request.getParameter("nom"));
-		a.setDescription(request.getParameter("desc"));
-		a.setPrix(Integer.parseInt(request.getParameter("prix")));
-		a.setImage(request.getParameter("img"));
 		try {
-			new ArticleDaoImpl().delete(a);
+			new ArticleDaoImpl().delete(Integer.parseInt(request.getParameter("ref")));
 			request.getServletContext().setAttribute("articles", new ArticleDaoImpl().findAll());
 			request.getRequestDispatcher("WEB-INF/editconfirm.jsp").forward(request, response);
 		} catch (ClassNotFoundException | SQLException e) {

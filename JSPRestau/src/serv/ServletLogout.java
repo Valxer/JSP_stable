@@ -16,7 +16,7 @@ public class ServletLogout extends HttpServlet {
     }
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getSession().setAttribute("admin", null);
-		request.getRequestDispatcher("Admin.jsp").forward(request, response);
+		request.getRequestDispatcher("LoginAdmin.jsp").forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);

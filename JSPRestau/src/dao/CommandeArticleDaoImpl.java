@@ -83,8 +83,14 @@ public class CommandeArticleDaoImpl implements DaoCommandeArticle {
 	public void update(CommandeArticle obj) throws ClassNotFoundException, SQLException {
 	}
 
-	@Override
+
 	public void delete(CommandeArticle obj) throws ClassNotFoundException, SQLException {
+	}
+
+	@Override
+	public void delete(Integer id) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
