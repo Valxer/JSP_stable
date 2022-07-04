@@ -1,0 +1,8 @@
+127.0.0.1 - - [04/Jul/2022:09:33:59 +0200] "GET / HTTP/1.1" 404 996
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:05 +0200] "GET /JSPRestau/Accueil.jsp HTTP/1.1" 200 3906
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:05 +0200] "GET /JSPRestau/css/common_styles.css HTTP/1.1" 200 1131
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:35 +0200] "GET /JSPRestau/Accueil.jsp HTTP/1.1" 200 3906
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:35 +0200] "GET /JSPRestau/css/common_styles.css HTTP/1.1" 200 1131
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:35 +0200] "GET /favicon.ico HTTP/1.1" 404 1007
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:37 +0200] "GET /JSPRestau/Admin.jsp HTTP/1.1" 404 1015
+0:0:0:0:0:0:0:1 - - [04/Jul/2022:09:34:40 +0200] "GET /JSPRestau/Connexion.jsp HTTP/1.1" 200 4717

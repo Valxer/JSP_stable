@@ -10,11 +10,18 @@
         <li class="nav-item"> <a class="nav-link" href="Menu">Menu</a> </li>
         <% 
        	Client c = (Client)session.getAttribute("client");
+       	/* Admin */String a = null;/* (Admin)session.getAttribute("admin"); */
        	if (c == null){
        		out.print("<li class='nav-item'> <a class='nav-link' href='Connexion.jsp'>Connexion/Inscription</a> </li>");
+       		if ( a == null)
+       			out.print("<li class='nav-item'> <a class='nav-link' href='Admin.jsp'>Admin</a> </li>");
+       		else{
+       			out.print("<li class='nav-item'> <a class='nav-link' href='#'>Gestion articles</a> </li>");
+       			out.print("<li class='nav-item'> <a class='nav-link' href='Logout'>Deconnection Admin</a> </li>");       				
+       		}       			
        	} else {
        		out.print("<li class='nav-item'> <a class='nav-link' href='ServletAccesCommande'>Commande</a> </li>");
-       		out.print("<li class='nav-item'> <a class='nav-link' href='ServletDeconnexion'>Deconnexion</a> </li>");
+       		out.print("<li class='nav-item'> <a class='nav-link' href='ServletDeconnexion'>Deconnection</a> </li>");
        	}
        
        	%>
